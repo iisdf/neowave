@@ -104,6 +104,17 @@ p {
   }
 }
 
+body {
+  &::-webkit-scrollbar {
+    width: 0.25em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $azure;
+    border-radius: 3px;
+  }
+}
+
 header {
   @include flex();
   @include container();
